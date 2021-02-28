@@ -1,6 +1,12 @@
-package main 
+package main
 
-import "https://github.com/leeyh-kor/golang/banking"
+import (
+	"fmt"
+
+	"github.com/leeyh-kor/golang/banking"
+) //  큰 따옴표 작은 따옴표 구분해야함
+
 func main() {
-	print("hello World")
+	account := banking.BankAccount{Owner: "yh", Balance: 100}
+	fmt.Println(account)
 }
